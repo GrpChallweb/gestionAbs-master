@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le :  mar. 11 fév. 2020 à 12:48
+-- Généré le :  mar. 11 fév. 2020 à 13:52
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.19
 
@@ -56,7 +56,7 @@ CREATE TABLE `cours` (
 
 CREATE TABLE `module` (
   `id` int(11) NOT NULL,
-  `libele` varchar(255) NOT NULL
+  `libelle` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -67,7 +67,7 @@ CREATE TABLE `module` (
 
 CREATE TABLE `promotion` (
   `id` int(11) NOT NULL,
-  `libele` varchar(255) NOT NULL
+  `libelle` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -152,6 +152,18 @@ ALTER TABLE `absence`
 -- AUTO_INCREMENT pour la table `cours`
 --
 ALTER TABLE `cours`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `module`
+--
+ALTER TABLE `module`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `promotion`
+--
+ALTER TABLE `promotion`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
